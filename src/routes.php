@@ -1,3 +1,4 @@
 <?php
 
-Route::post('/', 'SlackInviteController@store');
+Route::post('/', 'SlackInviteController@store')
+    ->name('slack-invite.store');
