@@ -2,6 +2,7 @@
 
 namespace Tapp\SlackInviter\Http\Controllers;
 
+use SlackInviter;
 use Tapp\SlackInviter\Http\Requests\SlackInviteRequest;
 use Illuminate\Routing\Controller;
 
@@ -9,6 +10,8 @@ class SlackInviteController extends Controller
 {
     public function store(SlackInviteRequest $request)
     {
-        dd($request->input('email'));
+        $response = SlackInviter::invite($request->input('email'));
+
+        dd($response);
     }
 }

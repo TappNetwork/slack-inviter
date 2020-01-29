@@ -6,7 +6,7 @@
       event.preventDefault();
       let email = document.getElementById('slackInviterEmail');
       var xhr = new XMLHttpRequest();
-      xhr.open('POST', '/slack-inviter');
+      xhr.open('POST', '/slack-invite');
       xhr.send({'email': email});
     });
   });
