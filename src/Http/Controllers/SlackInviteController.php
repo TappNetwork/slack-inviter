@@ -10,8 +10,6 @@ class SlackInviteController extends Controller
 {
     public function store(SlackInviteRequest $request)
     {
-        $response = SlackInviter::invite($request->input('email'));
-
-        dd($response);
+        $response = SlackInviter::invite($request->validated());
     }
 }

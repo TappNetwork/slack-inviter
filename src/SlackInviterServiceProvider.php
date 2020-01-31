@@ -35,8 +35,8 @@ class SlackInviterServiceProvider extends ServiceProvider
         $this->mergeConfigFrom(__DIR__.'/../config/config.php', 'slack-inviter');
 
         // Register the main class to use with the facade
-        $this->app->singleton('slack-inviter', function () {
-            return new SlackInviter;
+        $this->app->singleton('slack-inviter', function ($app) {
+            return new SlackInviterManager($app);
         });
     }
 
