@@ -20,15 +20,11 @@ class SlackInviterManager
 
     protected function resolve()
     {
-        $token = $this->app['config']['slack-inviter.oauth_token'];
+        $token = $this->app['config']['slack-inviter.legacy_token'];
 
         $base_uri = $this->app['config']['slack-inviter.url'];
 
-        $team_id = $this->app['config']['slack-inviter.app_id'];
-
-        $channels = $this->app['config']['slack-inviter.channels'];
-
-        $client = new SlackInviterApiClient($token, $base_uri, $team_id, $channels);
+        $client = new SlackInviterApiClient($token, $base_uri);
 
         return new SlackInviter($client);
     }

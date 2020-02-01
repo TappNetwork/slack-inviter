@@ -5,14 +5,28 @@
     let form = document.getElementById('slackInviterForm');
     form.addEventListener("submit", function (event) {
       event.preventDefault();
+      let button = document.getElementById('slackInviterBtn');
+      let spinner = document.getElementById('slackInviterSpinner');
       let email = document.getElementById('slackInviterEmail').value;
-      var formData = new FormData();
-      formData.append('email', email);
+      let formData = new FormData();
       let xhr = new XMLHttpRequest();
+      formData.append('email', email);
       xhr.onload = function () {
-        if (xhr.status == 200) {
-        } else {
-        }
+        spinner.removeAttribute('hidden');
+        button.classList.remove('btn-primary');
+        button.classList.add('btn-outline-primary');
+        window.setTimeout(function () {
+          if (xhr.status == 200) {
+            button.classList.remove('btn-outline-primary');
+            button.classList.add('btn-success');
+          } else {
+            button.classList.remove('btn-outine-primary');
+            button.classList.add('btn-danger');
+          }
+          spinner.setAttribute('hidden', true);
+          button.innerHTML = "Invitation Sent."
+          button.setAttribute('disabled', true);
+        }, 500)
       };
       xhr.open('POST', '/slack-invite/invite');
       xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
