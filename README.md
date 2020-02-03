@@ -1,4 +1,4 @@
-# Very short description of the package
+# Laravel Slack Inviter
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/tapp/slack-inviter.svg?style=flat-square)](https://packagist.org/packages/tapp/slack-inviter)
 [![Build Status](https://img.shields.io/travis/tapp/slack-inviter/master.svg?style=flat-square)](https://travis-ci.org/tapp/slack-inviter)
