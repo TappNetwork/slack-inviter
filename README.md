@@ -1,7 +1,6 @@
 # Laravel Slack Inviter
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/tapp/slack-inviter.svg?style=flat-square)](https://packagist.org/packages/tapp/slack-inviter)
-[![Build Status](https://img.shields.io/travis/tapp/slack-inviter/master.svg?style=flat-square)](https://travis-ci.org/tapp/slack-inviter)
 [![Quality Score](https://img.shields.io/scrutinizer/g/tapp/slack-inviter.svg?style=flat-square)](https://scrutinizer-ci.com/g/tapp/slack-inviter)
 [![Total Downloads](https://img.shields.io/packagist/dt/tapp/slack-inviter.svg?style=flat-square)](https://packagist.org/packages/tapp/slack-inviter)
 ![Screenshot](https://user-images.githubusercontent.com/10762368/73688571-526cee80-469a-11ea-8d41-e60d528f3150.gif)
@@ -36,11 +35,11 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ### Security
 
-If you discover any security related issues, please email jacob.zlogar@gmail.com instead of using the issue tracker.
+If you discover any security related issues, please email security@tappnetwork.com instead of using the issue tracker.
 
 ## Credits
 
-- [Jacob Zlogar](https://github.com/tapp)
+- [Jacob Zlogar](https://github.com/jacobzlogar)
 - [All Contributors](../../contributors)
 
 ## License
