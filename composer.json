@@ -10,6 +10,11 @@
     "type": "library",
     "authors": [
         {
+            "name": "Tapp Network",
+            "email": "steve@tappnetwork.com",
+            "role": "Developer"
+        },
+        {
             "name": "Jacob Zlogar",
             "email": "jacob.zlogar@gmail.com",
             "role": "Developer"
@@ -17,11 +22,11 @@
     ],
     "require": {
         "php": "^7.1 || ^7.3 || ^8.0",
-        "illuminate/support": "5.7.* || 5.8.* ||^6.0 || ^7.0 || ^8.0"
+        "illuminate/support": "5.7.* || 5.8.* ||^6.0 || ^7.0 || ^8.0 || ^9.0 || ^10.0 || ^11.0"
     },
     "require-dev": {
-        "orchestra/testbench": "^3.8 || ^5.0 || ^6.0",
-        "phpunit/phpunit": "^7.0 || ^8.4 || ^9.3.3"
+        "orchestra/testbench": "^3.8 || ^5.0 || ^6.0 || ^7.0 || ^8.0 || ^9.0",
+        "phpunit/phpunit": "^7.0 || ^8.4 || ^9.3.3 || ^10.0"
     },
     "autoload": {
         "psr-4": {

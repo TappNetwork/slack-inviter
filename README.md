@@ -3,7 +3,6 @@
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/tapp/slack-inviter.svg?style=flat-square)](https://packagist.org/packages/tapp/slack-inviter)
 [![Quality Score](https://img.shields.io/scrutinizer/g/tapp/slack-inviter.svg?style=flat-square)](https://scrutinizer-ci.com/g/tapp/slack-inviter)
 [![Total Downloads](https://img.shields.io/packagist/dt/tapp/slack-inviter.svg?style=flat-square)](https://packagist.org/packages/tapp/slack-inviter)
-![Screenshot](https://user-images.githubusercontent.com/10762368/73688571-526cee80-469a-11ea-8d41-e60d528f3150.gif)
 
 ## Installation
 
@@ -13,11 +12,31 @@ You can install the package via composer:
 composer require tapp/slack-inviter
 ```
 
+## Appearance
+
+![Slack Inviter Form](https://raw.githubusercontent.com/TappNetwork/slack-inviter/master/docs/form.png)
+
 ## Usage
 
-``` php
-// Usage description here
+Add the Slack env vars on your `.env` file:
+
+```php
+SLACK_COMMUNITY_NAME=
+SLACK_TEAM_URL=
+SLACK_LEGACY_TOKEN=
 ```
+
+Add the inviter form on your blade file:
+
+```php
+<div>
+    @include('slack-inviter::invite-form', [ 
+        'email' => auth()->user()->email 
+    ])
+</div>
+```
+
+You're all set!
 
 ### Testing
 
@@ -39,7 +58,7 @@ If you discover any security related issues, please email security@tappnetwork.c
 
 ## Credits
 
-- [Jacob Zlogar](https://github.com/jacobzlogar)
+- [Tapp Network](https://github.com/TappNetwork)
 - [All Contributors](../../contributors)
 
 ## License

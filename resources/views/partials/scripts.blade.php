@@ -13,15 +13,15 @@
       formData.append('email', email);
       xhr.onload = function () {
         spinner.removeAttribute('hidden');
-        button.classList.remove('btn-primary');
-        button.classList.add('btn-outline-primary');
+        button.classList.remove('bg-gray-300');
+        button.classList.add('border-primary-600');
         window.setTimeout(function () {
           if (xhr.status == 200) {
-            button.classList.remove('btn-outline-primary');
-            button.classList.add('btn-success');
+            button.classList.remove('border-primary-600');
+            button.classList.add('bg-primary-400');
           } else {
-            button.classList.remove('btn-outine-primary');
-            button.classList.add('btn-danger');
+            button.classList.remove('border-primary-600');
+            button.classList.add('bg-rose-400');
           }
           spinner.setAttribute('hidden', true);
           button.innerHTML = "Invitation Sent."
