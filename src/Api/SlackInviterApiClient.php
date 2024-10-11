@@ -22,7 +22,7 @@ class SlackInviterApiClient
     {
         $response = $this->client->request('POST', "users.admin.invite?email={$email}", [
             'headers' => [
-                'Content-Type' => "application/json; charset=utf-8", 
+                'Content-Type' => "application/json; charset=utf-8",
             ],
         ]);
 
